@@ -1,0 +1,55 @@
+<div [hidden]="step !== 1">
+    <span>Hallo dokter selecteer eens een medicijn </span>
+
+    <select (change)="onMedicineChange($event.target.value)">
+        <option hidden></option>
+        <option *ngFor="let medicine of medicineList; let i = index" [value]="i">{{medicine.Name}}</option>
+    </select>
+
+    <div *ngIf="selectedItem">
+        <span>Naam: {{selectedItem.Name}} </span><br>
+        <span>Vorm van medicijn: {{getFormType()}} </span><br>
+        <span>Eenheid:{{getPackageType()}} </span><br>
+        <span>Aantal dozen :{{selectedItem.PackageDetails.AmountOfBoxes}} </span><br>
+        <span *ngIf="selectedItem.PackageDetails.Amount">Aantal: {{selectedItem.PackageDetails.Amount}} <br></span>
+        <span *ngIf="selectedItem.PackageDetails.TabletsPerStrip">Aantal tabletten per strip:
+            {{selectedItem.PackageDetails.TabletsPerStrip}}
+            <br></span>
+        <span *ngIf="selectedItem.PackageDetails.MlPerVial">Aantal ML per flesjes:
+            {{selectedItem.PackageDetails.MlPerVial}} <br></span>
+    </div>
+</div>
+
+<div [hidden]="step !== 2">
+
+    <span>Gebruiksvoorschrift: </span>
+    <input (change)="onPrescriptionChanged($event.target.value)"><br>
+
+    <span>Aflevermethode: </span>
+    <select (change)="onDeliveryMethodChanged($event.target.value)">
+        <option hidden></option>
+        <option value="Afhalen bij apotheek">Afhalen bij apotheek</option>
+        <option value="Thuisbezorgen bij patiënt">Thuisbezorgen bij patiënt</option>
+    </select> <br>
+</div>
+
+<div [hidden]="step !== 3">
+    <div class="box setWidth">
+        <div class="m1">
+            <div class=alignRight><span> uitgeschreven </span><br><br></div>
+            <span> patientnummer </span><br>
+            <span> aflevermethode </span><br>
+            <span> recept geldig tot </span><br><br>
+            <span> Medicijnen </span><br><br>
+            <div class="box m1">
+                <span>{{deliveryMethod}}</span><br>
+                <span>{{prescription}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-1">
+    <button (click)="Back()">Back</button>
+    <button class="ml-1" (click)="Next()">Next</button>
+</div>

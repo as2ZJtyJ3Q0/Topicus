@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\Stack\\Werk\\Topicus\\Casus\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\Johan\\Desktop\\Topicus\\Topicus\\Casus\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "D:\\Users\\Stack\\Werk\\Topicus\\Casus\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\Johan\\Desktop\\Topicus\\Topicus\\Casus\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\Stack\\Werk\\Topicus\\Casus\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\Johan\\Desktop\\Topicus\\Topicus\\Casus\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "D:\\Users\\Stack\\Werk\\Topicus\\Casus\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "C:\\Users\\Johan\\Desktop\\Topicus\\Topicus\\Casus\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\Johan\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\Stack\\Werk\\Topicus\\Casus\\Backend\\WebApplication1\\WebApplication1\\obj\\",
+        "outputPath": "C:\\Users\\Johan\\Desktop\\Topicus\\Topicus\\Casus\\Backend\\WebApplication1\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Johan\\AppData\\Roaming\\NuGet\\NuGet.Config",

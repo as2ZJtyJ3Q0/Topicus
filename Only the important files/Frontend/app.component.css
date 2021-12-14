@@ -1,0 +1,20 @@
+.box{
+    border-style: solid !important;
+    border-color: black;
+    border: 0.1em;
+}
+.m1{
+    margin: 8px;
+}
+.ml-1{
+    margin-left: 8px;
+}
+.mt-1{
+    margin-top: 8px;
+}
+.setWidth{
+    max-width: 20em;
+}
+.alignRight{
+    text-align: right;
+}
