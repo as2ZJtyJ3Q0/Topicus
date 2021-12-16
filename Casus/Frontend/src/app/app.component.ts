@@ -22,6 +22,10 @@ export class AppComponent {
       });
   }
 
+  getDate(){
+    return (new Date().toLocaleDateString())
+  }
+
   onMedicineChange(index) {
     this.selectedItem = (this.medicineList[index]);
   }

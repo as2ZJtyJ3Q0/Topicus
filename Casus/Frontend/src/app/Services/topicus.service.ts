@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class TopicusService {
 
-	private baseUrl = "https://localhost:44315/topicus"
+	private baseUrl = "https://localhost:5001/topicus"
 
 	constructor(private http: HttpClient) {
 	}

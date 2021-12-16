@@ -36,14 +36,15 @@
 <div [hidden]="step !== 3">
     <div class="box setWidth">
         <div class="m1">
-            <div class=alignRight><span> uitgeschreven </span><br><br></div>
-            <span> patientnummer </span><br>
-            <span> aflevermethode </span><br>
-            <span> recept geldig tot </span><br><br>
+            <div class=alignRight><span> Uitgeschreven: {{getDate()}}</span><br><br></div>
+            <span> Patientnummer: 12304 </span><br>
+            <span> Aflevermethode: {{deliveryMethod}} </span><br>
+            <span> Recept geldig tot: 209-08-2018 </span><br><br>
             <span> Medicijnen </span><br><br>
-            <div class="box m1">
-                <span>{{deliveryMethod}}</span><br>
-                <span>{{prescription}}</span>
+            <div class="box m1" *ngIf="selectedItem">
+                <span>{{selectedItem.Name}}</span><br>
+                <span>Gebruiksperiode: een week</span><br>
+                <span>Gebruiksvoorschrift: {{prescription}}</span>
             </div>
         </div>
     </div>
